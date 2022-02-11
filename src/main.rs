@@ -5,7 +5,11 @@ fn main() {
     let items = get_dir_items(&path);
 
     for item in items {
-        println!("• { }", item.file_name().unwrap().to_str().unwrap())
+        if item.is_dir() {
+            println!("• { }/", item.file_name().unwrap().to_str().unwrap())
+        } else {
+            println!("• { }", item.file_name().unwrap().to_str().unwrap())
+        }
     }
 }
 
