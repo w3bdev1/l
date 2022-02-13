@@ -5,7 +5,7 @@ A `ls` implementation in Rust
 ![Terminal Output Screenshot](./l.png)
 
 ### To Do
-- [x] Differentiate directories with trailing slashes
+- [x] Differentiate directories
 - [ ] Sizes
 - [ ] User and Groups
 - [ ] File permissions
