@@ -1,8 +1,8 @@
-use l::{get_dir_items, render_items};
+use l::Files;
 use std::env;
 
 fn main() {
-    let path = env::current_dir().unwrap();
-    let items = get_dir_items(&path);
-    render_items(items);
+    let path = env::current_dir().expect("Cannot read current directory");
+    let items = Files::from_path(path);
+    items.render();
 }
