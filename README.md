@@ -6,7 +6,7 @@ A `ls` implementation in Rust
 
 ### To Do
 - [x] Differentiate directories
-- [ ] Sizes
+- [x] Sizes
 - [ ] User and Groups
 - [ ] File permissions
 - [ ] Last modified date and time
